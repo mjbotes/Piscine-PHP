@@ -1,0 +1,152 @@
+@font-face {
+	font-family: "xmas";
+	src: url(SANTBSB_.TTF);
+}
+
+body {
+	background-color: crimson;
+	margin: 0;
+	padding: 0;
+	color: white;
+}
+
+header {
+	margin: 0;
+	padding: 0;
+	background-image: url("./header_bg.jpg");
+}
+
+h1 {
+	color: black;
+	text-emphasis-color: white;
+	text-emphasis-style: solid;
+	text-decoration: solid;
+	font-size: 10vw;
+	text-align: center;
+	margin: 0;
+	font-family: xmas;
+}
+
+.nav {
+	background-color: green;
+	width: 100%;
+	display: block;
+}
+
+.nav a {
+	width: 19.8%;
+	padding-top: 1vh;
+	padding-bottom: 1vh;
+	outline-width: 1px;
+	outline-style: solid;
+	text-align: center;
+	height: 100%;
+	display:inline-block;
+	transition: 0.8s;
+}
+
+.nav .empty {
+	outline-style: none;
+}
+
+.nav a:hover {
+	background-color: white;
+	color: green;
+}
+
+.filter {
+	width: 15%;
+	float: left;
+	background-color: white;
+	border-radius: 5px;
+	margin: 10px;
+}
+
+.filter p {
+	padding: 1vh 0 1vh 0;
+	margin: 2%;
+	text-align: center;
+	color: green;
+	font-family: xmas;
+	font-size: 150%;
+	outline-width: 1px;
+}
+
+.main {
+	display: block;
+}
+
+
+.products {
+	width: 80%;
+	margin: 10px;
+	float: right;
+}
+
+.item {
+	background-color:white;
+	text-align: center;
+	border-radius: 5px;
+	color: red;
+	width: 30%;
+}
+
+.item img{
+	width: 70%;
+}
+
+.login {
+	background-color: white;
+	margin: 10px auto;
+	width: 30%;
+	font-family: xmas;
+	color: green;
+	border-radius: 15px;
+}
+
+.register {
+	background-color: white;
+	margin: 10px auto;
+	width: 60%;
+	font-family: xmas;
+	color: green;
+	border-radius: 15px;
+}
+
+.login input .text, .register input .text {
+	margin: 5px;
+	float:right;
+}
+
+.login p {
+	text-align: center;
+	font-size: 2vw;
+}
+
+.login label, .register .l_d label {
+	padding: 10px;
+	font-size: 2vw;
+}
+
+.login  .button, .register .button{
+	background-color: green;
+	color: white;
+	display: block;
+	margin: 10px auto 10px auto;
+	padding: 10px;
+	width: 30%;
+	font-family: xmas;
+	font-size: 2vw;
+}
+
+.login h2, .register h2 {
+	margin: 5px;
+	text-align: center;
+	font-size: 3vw;
+}
+
+.l_d {
+	display: block;
+	margin: 0 auto;
+	width: max-content;
+}
