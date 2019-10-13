@@ -10,7 +10,14 @@
 	href = "style.css" />
 </head>
 <body>
-	<header><h1>Shop</h1></header>
+	<header>
+		<h1>Shop</h1>
+		<div class="userd">
+			<?php
+				require_once "user_scripts/user_bar.php";
+			?>
+		</div>
+	</header>
 	<div class="nav">
 		<a href="index.php">Home</a>
 		<a>About</a>

@@ -1,3 +1,6 @@
+<?php
+	require_once "user_scripts/login.php";
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -28,16 +31,22 @@
 	<div class="main">
 		<div class="login">
 			<h2>Login</h2>
-			<form>
-				<div class="l_d">
-				<label>Email</label><input type="text" class="text">
-				<br />
-				<label>Password</label><input type="password" name="" class="text">
-				<br />
-				</div>
-				<p><a>Forgot Password</a> | <a href="register.php"> Register</a></p>
-				<input type="submit" value="login" class=button>
-			</form>
+			<form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
+            <div class="form-group <?php echo (!empty($er_user)) ? 'has-error' : ''; ?>">
+                <label>Email</label>
+                <input type="email" name="user" class="form-control" value="<?php echo $username; ?>">
+                <span class="help-block"><?php echo $er_user; ?></span>
+            </div>    
+            <div class="form-group <?php echo (!empty($er_pass)) ? 'has-error' : ''; ?>">
+                <label>Password</label>
+                <input type="password" name="pass" class="form-control">
+                <span class="help-block"><?php echo $er_pass; ?></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" class="btn btn-primary" value="Login">
+            </div>
+            <p>Don't have an account? <a href="register.php">Sign up now</a>.</p>
+        </form>
 		</div>
 	</div>
 </body>

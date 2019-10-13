@@ -5,17 +5,17 @@
 
 body {
 	background-color: crimson;
-	background-image: url("bg.jpg");
+	background-image: url("imgs/bg.jpg");
 	background-size: 100%;
 	margin: 0;
 	padding: 0;
-	color: white;
+	color: black;
 }
 
 header {
 	margin: 0;
 	padding: 0;
-	background-image: url("./header.jpg");
+	background-image: url("imgs//header.jpg");
 	background-size: 100%;
 }
 
@@ -81,7 +81,6 @@ h1 {
 
 .main {
 	border-radius: 15px;
-	box-shadow: ;
 	display: block;
 	background-color: white;
 	width: 95%;
@@ -181,4 +180,20 @@ h1 {
 	display: block;
 	margin: 0 auto;
 	width: max-content;
+}
+
+.userd {
+	background-color: grey;
+	color:white;
+	height: 30px;
+	width: 80px;
+	text-align: center;
+	border-radius: 15px;
+	position: absolute;
+	top: 12px;
+	right: 5px;
+}
+
+.userd a {
+	color: white;
 }
