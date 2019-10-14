@@ -6,7 +6,7 @@
 		exit;
 	}
 
-	require_once "config.php";
+	require_once "scripts/config.php";
 
 	$user = $pass = "";
 	$er_user = $er_pass = "";

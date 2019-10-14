@@ -22,7 +22,7 @@
 	<div class="main">
 		<div class="products">
 			<?php
-				require_once "config.php";
+				require_once "scripts/config.php";
 				$sql="SELECT img_link, p_name, price, product_id FROM products";
 				if ($result=mysqli_query($link,$sql))
 				{

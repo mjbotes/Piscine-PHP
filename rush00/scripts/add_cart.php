@@ -1,6 +1,6 @@
 <?php
 	session_start();
-	require_once "../config.php";
+	require_once "config.php";
 	if(isset($_SESSION["is_login"]) && $_SESSION["is_login"] === true) {
 		$sql = "INSERT INTO `cart` (`user_id`, `product_id`, `qty`) VALUES (?, ?, '1')";
 		$stmt = mysqli_stmt_init($link);
