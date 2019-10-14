@@ -10,17 +10,11 @@
 	<title>Document</title>
 	<link rel = "stylesheet"
 	type = "text/css"
-	href = "style.css" />
+	href = "style/style.css" />
 </head>
 <body>
 	<header><h1>Shop</h1></header>
-	<div class="nav">
-		<a href="index.php">Home</a>
-		<a>About</a>
-		<a class="empty"></a>
-		<a href="login.php">Login or my account</a>
-		<a href="cart.php">Cart</a>
-	</div>
+	<?php require_once "scripts/nav_script.php"; ?>
 	<div class="main">
 		<div class="register">
 			<h2>Register</h2>

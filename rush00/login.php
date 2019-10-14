@@ -16,12 +16,7 @@
 	<header>
 		<img src="imgs/header/llogo.php">
 	</header>
-	<div class="nav">
-		<a href="index.php">Home</a>
-		<a href="about.php">About</a>
-		<a href="login.php">Login or my account</a>
-		<a href="cart.php">Cart</a>
-	</div>
+	<?php require_once "scripts/nav_script.php"; ?>
 	<div class="main">
 		<div class="login">
 			<h2>Login</h2>

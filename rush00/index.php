@@ -18,22 +18,17 @@
 			?>
 		</div>
 	</header>
-	<div class="nav">
-		<a href="index.php">Home</a>
-		<a href="about.php">About</a>
-		<a href="login.php">Login or my account</a>
-		<a href="cart.php">Cart</a>
-	</div>
+	<?php require_once "scripts/nav_script.php"; ?>
 	<div class="main">
 		<div class="products">
 			<?php
 				require_once "config.php";
-				$sql="SELECT img_link, p_name, price FROM products";
+				$sql="SELECT img_link, p_name, price, product_id FROM products";
 				if ($result=mysqli_query($link,$sql))
 				{
 				while ($row=mysqli_fetch_row($result))
 				  {
-				  echo '<div class="item"><img src="imgs\products\\'.$row[0].'"><h2>'.$row[1].'</h2><p>'.$row[2].'</p></div>';
+				  echo '<div class="item"><img src="imgs\products\\'.$row[0].'"><h2>'.$row[1].'</h2><p>'.$row[2].'</p><form action="scripts/add_cart.php"><input type="hidden" name="p_id" value="'.$row[3].'"><input type="submit" value="add to cart"></form></div>';
 				  }
 				mysqli_free_result($result);
 			  }	

@@ -37,7 +37,7 @@
 							if(password_verify($pass,$h_pass)) {
 								session_start();
 								$_SESSION["is_login"] = true;
-								$_SESSION["ID"] = $user_id;
+								$_SESSION["ID"] = $id;
 								$_SESSION["Name"] = $name;
 								header("location: index.php");
 							} else{

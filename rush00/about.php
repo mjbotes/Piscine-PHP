@@ -16,12 +16,7 @@
 <body>
     <header><img src="./imgs/header/alogo.png" style="width:12%;"></header>
     <div class ="about">
-        <div class="nav">
-                <a href="index.php">Home</a>
-                <a href="about.php">About</a>
-                <a href="login.php">Login or my account</a>
-                <a href="cart.php">Cart</a>
-        </div>
+		<?php require_once "scripts/nav_script.php"; ?>
         <h3>Santa and his Elf</h3>
         <div class="aboutinfobox">
             <br/>
