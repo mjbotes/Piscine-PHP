@@ -11,6 +11,7 @@
 </head>
 <body>
 	<header>
+		<img src="./imgs/header/logo.png" style="width:12%;">
 	</header>
 	<?php
 		require_once "scripts/nav_script.php";
@@ -22,5 +23,8 @@
 		<input type="file" name="fileToUpload" id="fileToUpload">
     	<input type="submit" value="Upload Image" name="submit">
 	</form>
+	<?php
+	require_once "scripts/footer.php";
+?>
 	</body>
 </html>

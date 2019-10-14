@@ -20,5 +20,8 @@
 	<?php
 		require_once "scripts/cart_script.php";
 	?>
+	<?php
+	require_once "scripts/footer.php";
+?>
 </body>
 </html>

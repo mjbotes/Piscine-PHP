@@ -1,14 +1,14 @@
 @font-face {
 	font-family: "xmas";
-	src: url(./Roboto_Condensed/RobotoCondensed-Bold.ttf);
+	src: url(../fonts/RobotoCondensed-Bold.ttf);
 }
 @font-face {
 	font-family: "head2";
-	src: url(./Roboto_Condensed/RobotoCondensed-Regular.ttf);
+	src: url(../fonts/RobotoCondensed-Regular.ttf);
 }
 @font-face {
 	font-family: "body";
-	src: url(./Roboto_Condensed/RobotoCondensed-Light.ttf);
+	src: url(../fonts/RobotoCondensed-Light.ttf);
 }
 body {
 	background-color: white;
@@ -38,15 +38,48 @@ header {
 	background-size:100%;
 }
 
+.footer {
+	position: fixed;
+	background:black; 
+    bottom: 0;
+    left: 0;
+    right: 0;
+	height: 50px;
+	font-family: body;
+	color: #DDD;
+}
+
+.footer  .fcontent  .a{
+	color: white;
+}
+.link {
+	padding-top: 1%;
+	color: #DDD;
+	padding-left: 2%;
+	font-size: 90%;
+	text-decoration: none;
+}
+
+.link a {
+	color: white;
+}
+
+.footer .fcontent{
+	padding-top: .5%;;
+	text-decoration: none;
+	color:white;
+	padding-top: 1%;
+}
+
 h1 {
 	color: black;
 	text-emphasis-color: white;
 	text-emphasis-style: solid;
 	text-decoration: solid;
-	font-size: 2vw;
+	font-size: 5vh;
 	text-align: center;
 	margin: 0;
-	font-family: "xmas";
+	font-family: xmas;
 }
 h2 {
 	padding-top: 3%;
@@ -57,17 +90,17 @@ h2 {
 	font-size: 1.5vw;
 	text-align: center;
 	margin: 0;
-	font-family: "head2";
+	font-family: head2;
 }
 
 h3 {
 	padding-top: 3%;
 	color: black;
 	text-decoration: solid;
-	font-size: 1.8vw;
+	font-size: 5vh;
 	text-align: center;
 	margin: 0;
-	font-family: "head2";
+	font-family: head2;
 }
 
 .nav {
@@ -90,6 +123,28 @@ h3 {
 	color: black;
 }
 
+.userd{
+	color: white;
+    font-family: xmas;
+    font-size: 2vh;
+    right: 0;
+    top: 5%;
+    padding-right: 2%;
+    width: 10%;
+	padding-left: 1%;
+    position: fixed;
+	height: 3vh;
+	padding-top: .5%;
+    background: black;
+	border-radius: 8px 7px 7px;
+	text-align: center;
+	font-size: 1.8vh;
+}
+
+.userd a {
+	color: white;
+	text-decoration: none;
+}
 
 .nav .empty {
 	outline-style: none;
@@ -124,8 +179,9 @@ h3 {
 	border-radius: 15px;
 	display: block;
 	background-color: white;
-	width: 95%;
+	width: 60%;
 	margin: 0 auto;
+	padding-top: 2%;
 }
 
 
@@ -135,6 +191,8 @@ h3 {
 	float: center;
 	text-align: center;
 	font-family: head2;
+	margin-left: auto;
+    margin-right: auto;
 }
 
 .item {
@@ -156,13 +214,42 @@ h3 {
 .login {
 	background-color: white;
 	margin: 10px auto;
-	width: 30%;
+	width: 50%;
 	font-family: xmas;
-	color: maroon;
-	border-radius: 15px;
+	color: black;
 	border-style: solid;
-	border-color: maroon;
+	border-color: black;
 	border-width: 4px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 5%;
+}
+
+.cart{
+	color: black;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+
+}
+
+table{
+	border: 4px solid black;
+	border-collapse: collapse;
+	width: 50%;
+	font-family: head2;
+}
+th{
+	font-family: xmas;
+}
+tr{
+	font-family: body;
+}
+
+td{
+	border: 2px solid black;
+	padding: 1%;
+	font-family: body;
 }
 
 .register {
@@ -206,8 +293,7 @@ h3 {
 	background-color: maroon;
 	color: white;
 	display: block;
-	margin: 10px auto 10px auto;
-	padding: 10px;
+	padding: 2%;
 	width: 30%;
 	font-family: xmas;
 	font-size: 2vw;
@@ -218,7 +304,6 @@ h3 {
 }
 
 .login h2, .register h2 {
-	margin: 5px;
 	text-align: center;
 	font-size: 3vw;
 }
@@ -229,7 +314,7 @@ h3 {
 	width: max-content;
 }
 .about{
-	width:70%;
+	width:80%;
 	text-align: center;
 	margin-left: auto;
 	margin-right: auto;
@@ -269,9 +354,50 @@ h3 {
 	right: 50%;
 	margin-left: auto;
 	margin-right: auto;
-	margin-top: 3vh;
+	/* margin-top: 3vh; */
 }
 
-table {
+.form{
+	font-family: body;
 	color: black;
+	width: 60%;
+}
+
+.form-group{
+	padding-top: 4%;;
+	width:50%;
+	padding-bottom: 0;
+	font-family: body;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.button{
+	width: 30%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.admin_table{
+	width: 50%;
+	border: 2px solid black;
+	border-collapse: collapse;
+	margin-left: auto;
+	margin-right: auto;
+	margin: 10px auto;
+	display: block;
+	color: black;
+}
+.admin_table img{
+	max-height: 20%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.admin_table td{
+	width: 20%;
+}
+
+.a_icon {
+	width: 15%;
 }

@@ -41,6 +41,9 @@
             <p>Already have an account? <a href="login.php">Login here</a>.</p>
         </form>
 		</div>
-	</div>
+    </div>
+    <?php
+	require_once "scripts/footer.php";
+?>
 </body>
 </html>

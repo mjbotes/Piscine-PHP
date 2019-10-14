@@ -70,6 +70,7 @@
                 <div id="notification"></div>
                 <a class="button" onclick="email_subscribepopup()"><span>Submit</span></a> </div>
             </form>
+            <br /><br /><br />
             <div class="subscribe-bottom">
               <input type="checkbox" id="newsletter_popup_dont_show_again">
               <label for="newsletter_popup_dont_show_again" style="color:black;">Don't show this popup again</label>
@@ -81,5 +82,9 @@
   </div>
 </div>
 <a class="btn btn-primary skip" href="#popup1" style="padding:6px 15px; background:#333; color:#fff; text-decoration:none; border-radius:3px; display:inline-block;">Sign Up</a>
-    </body>
+<br /><br /><br /><br /><br />
+<?php
+	require_once "scripts/footer.php";
+?>    
+</body>
 		

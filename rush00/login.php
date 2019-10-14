@@ -38,5 +38,8 @@
         </form>
 		</div>
 	</div>
+	<?php
+	require_once "scripts/footer.php";
+?>
 </body>
 </html>
