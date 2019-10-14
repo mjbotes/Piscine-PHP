@@ -1,33 +1,73 @@
 @font-face {
 	font-family: "xmas";
-	src: url(SANTBSB_.TTF);
+	src: url(./Roboto_Condensed/RobotoCondensed-Bold.ttf);
 }
-
+@font-face {
+	font-family: "head2";
+	src: url(./Roboto_Condensed/RobotoCondensed-Regular.ttf);
+}
+@font-face {
+	font-family: "body";
+	src: url(./Roboto_Condensed/RobotoCondensed-Light.ttf);
+}
 body {
-	background-color: crimson;
-	background-image: url("imgs/bg.jpg");
+	background-color: white;
 	background-size: 100%;
 	margin: 0;
 	padding: 0;
-	color: black;
+	color: white;
+	text-align: center;
+}
+
+p {
+	background-color: white;
+	background-size: 100%;
+	font-family: body;
+	margin: 0;
+	padding: 0;
+	color: rgb(0, 0, 0);
+	text-align: center;
 }
 
 header {
 	margin: 0;
 	padding: 0;
-	background-image: url("imgs//header.jpg");
-	background-size: 100%;
+	padding-top: 1%;
+	padding-bottom: 1%;
+	background-image: url("../imgs/header.jpg");
+	background-size:100%;
 }
 
 h1 {
-	color: white;
+	color: black;
 	text-emphasis-color: white;
 	text-emphasis-style: solid;
 	text-decoration: solid;
-	font-size: 10vw;
+	font-size: 2vw;
 	text-align: center;
 	margin: 0;
-	font-family: xmas;
+	font-family: "xmas";
+}
+h2 {
+	padding-top: 3%;
+	color: black;
+	text-emphasis-color: white;
+	text-emphasis-style: solid;
+	text-decoration: solid;
+	font-size: 1.5vw;
+	text-align: center;
+	margin: 0;
+	font-family: "head2";
+}
+
+h3 {
+	padding-top: 3%;
+	color: black;
+	text-decoration: solid;
+	font-size: 1.8vw;
+	text-align: center;
+	margin: 0;
+	font-family: "head2";
 }
 
 .nav {
@@ -36,19 +76,20 @@ h1 {
 }
 
 .nav a {
-	width: 19.8%;
+	width: 15%;
 	padding-top: 1vh;
 	padding-bottom: 1vh;
-	outline-width: 1px;
+	outline-width: 1;
 	outline-style: solid;
 	text-align: center;
 	display: inline-block;
 	transition: 0.8s;
 	text-decoration: none;
-	font-size: 24px;
+	font-size: 2vh;
 	font-family: xmas;
-	color: maroon;
+	color: black;
 }
+
 
 .nav .empty {
 	outline-style: none;
@@ -57,7 +98,7 @@ h1 {
 .nav a:hover {
 	background-color: maroon;
 	color: white;
-	font-size: 30px;
+	font-size: 2.5vh;
 }
 
 .filter {
@@ -92,18 +133,24 @@ h1 {
 	width: 80%;
 	margin: 10px;
 	float: center;
+	text-align: center;
+	font-family: head2;
 }
 
 .item {
 	background-color:white;
 	text-align: center;
 	border-radius: 5px;
-	color: red;
+	color: black;
 	width: 30%;
+	display: inline-block;
+	margin-left: 0;
+	margin-right: 0;
 }
 
 .item img{
-	width: 70%;
+	width: 50%;
+	border: 4px solid black;
 }
 
 .login {
@@ -181,19 +228,46 @@ h1 {
 	margin: 0 auto;
 	width: max-content;
 }
-
-.userd {
-	background-color: grey;
-	color:white;
-	height: 30px;
-	width: 80px;
+.about{
+	width:70%;
 	text-align: center;
-	border-radius: 15px;
-	position: absolute;
-	top: 12px;
-	right: 5px;
+	margin-left: auto;
+	margin-right: auto;
 }
-
-.userd a {
-	color: white;
+.aboutinfobox{
+	width: 50%;
+	z-index: 15;
+	left: 50%;
+	right: 50%;
+	margin-left: auto;
+	margin-right: auto;
+}
+.marnus{
+	width: 50%;
+	display: inline-block;
+	text-align: center;
+	display: block;
+	float: left;
+}
+.about img{
+	width:50%;
+    border-radius: 200px;
+    box-sizing: border-box;
+    background-color: #DDD;
+	border: 5px solid #cfd8dc;
+	text-align: center;
+	margin-top: 1vh;
+	margin-bottom: 2vh;
+}
+.about p{
+	margin: 1vh;
+}
+.about .moreabout{
+	width: 50%;
+	z-index: 15;
+	left: 50%;
+	right: 50%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 3vh;
 }

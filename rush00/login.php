@@ -10,21 +10,15 @@
 	<title>Document</title>
 	<link rel = "stylesheet"
 	type = "text/css"
-	href = "style.css" />
+	href = "style/style.css" />
 </head>
 <body>
 	<header>
-		<h1>Shop</h1>
-		<div class="acc">
-			<a>
-				<img> 
-		</a>
-</div>
+		<img src="imgs/header/llogo.php">
 	</header>
 	<div class="nav">
 		<a href="index.php">Home</a>
-		<a>About</a>
-		<a class="empty"></a>
+		<a href="about.php">About</a>
 		<a href="login.php">Login or my account</a>
 		<a href="cart.php">Cart</a>
 	</div>

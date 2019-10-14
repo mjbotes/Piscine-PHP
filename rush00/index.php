@@ -7,11 +7,11 @@
 	<title>Document</title>
 	<link rel = "stylesheet"
 	type = "text/css"
-	href = "style.css" />
+	href = "./style/style.css" />
 </head>
 <body>
 	<header>
-		<h1>Shop</h1>
+		<img src="./imgs/header/logo.png" style="width:12%;">
 		<div class="userd">
 			<?php
 				require_once "user_scripts/user_bar.php";
@@ -20,14 +20,25 @@
 	</header>
 	<div class="nav">
 		<a href="index.php">Home</a>
-		<a>About</a>
-		<a class="empty"></a>
+		<a href="about.php">About</a>
 		<a href="login.php">Login or my account</a>
 		<a href="cart.php">Cart</a>
 	</div>
 	<div class="main">
-		<div class="products"><div class="item">
-			<img src="p1.jpg"><h2>Gingerbread House</h2></div></div>
+		<div class="products">
+			<?php
+				require_once "config.php";
+				$sql="SELECT img_link, p_name, price FROM products";
+				if ($result=mysqli_query($link,$sql))
+				{
+				while ($row=mysqli_fetch_row($result))
+				  {
+				  echo '<div class="item"><img src="imgs\products\\'.$row[0].'"><h2>'.$row[1].'</h2><p>'.$row[2].'</p></div>';
+				  }
+				mysqli_free_result($result);
+			  }	
+			?>
+		</div>
 	</div>
 </body>
 </html>
